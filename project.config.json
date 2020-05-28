@@ -20,7 +20,8 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"useCompilerModule": true
 	},
 	"appid": "wx2f9e113bd042f7b9",
 	"projectname": "mp-guide",
