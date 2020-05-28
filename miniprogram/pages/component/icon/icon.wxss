@@ -1,0 +1,56 @@
+/* miniprogram/pages/component/icon/icon.wxss */
+.sprite-icon {
+  display: block;
+  width: 100px;
+  height: 115px;
+  background: url("http://bbs.itsource.cn/data/attachment/forum/201706/30/163249m9lmyl6z6cui4mci.png") -100px -230px;
+}
+
+.icon-close {
+  display: inline-block;
+  width: 17px;
+  height: 2px;
+  background: green;
+  transform: rotate(45deg);
+}
+.icon-close::after {
+  content: '';
+  display: block;
+  width: 17px;
+  height: 2px;
+  background: red;
+  transform: rotate(90deg);
+}
+
+@font-face {
+  font-family: 'gym';  /* project id 1836334 */
+  src: url('//at.alicdn.com/t/font_1836334_a6q0s1zdatw.eot');
+  src: url('//at.alicdn.com/t/font_1836334_a6q0s1zdatw.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1836334_a6q0s1zdatw.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1836334_a6q0s1zdatw.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1836334_a6q0s1zdatw.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1836334_a6q0s1zdatw.svg#gym') format('svg');
+}
+.gymfont {
+  font-family: "gym" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+.icon-dumbbell::before {
+  content: "\e62a";
+}
+.icon-timer::before {
+  content: "\e621";
+  color: red;
+  font-size: 20px;
+}
+
+.svg-icon {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyBjbGFzcz0iaWNvbiIgd2lkdGg9IjIwMHB4IiBoZWlnaHQ9IjIwMC4wMHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTU3Mi44IDQ2NGwtMS42LTEuNi0yOTQuNC0xODIuNCAxNzkuMiAyODhDNDcwLjQgNTkyIDQ5NiA2MDggNTI0LjggNjA4YzQ0LjggMCA4MC0zNS4yIDgwLTgwIDEuNi0yNS42LTEyLjgtNDkuNi0zMi02NHoiICAvPjxwYXRoIGQ9Ik01MTYuOCA3MC40Yy0xNy42IDAtMzIgMTQuNC0zMiAzMlYxODUuNmMwIDE3LjYgMTQuNCAzMiAzMiAzMnMzMi0xNC40IDMyLTMydi00OGMyMDQuOCAxNy42IDM2NC44IDE5NS4yIDM1MiA0MDYuNC0xMi44IDE5Mi0xNjggMzQ3LjItMzYwIDM2MC0yMjIuNCAxMi44LTQwOC0xNjMuMi00MDgtMzg0IDAtMTA4LjggNDQuOC0yMDYuNCAxMTYuOC0yNzYuOCA0LjgtNC44IDgtMTIuOCA4LTE5LjIgMC0zMC40LTM2LjgtNDYuNC01Ny42LTI0LTkxLjIgODkuNi0xNDQgMjE3LjYtMTMyLjggMzU2LjggMTcuNiAyMjAuOCAxOTguNCAzOTguNCA0MTkuMiA0MTIuOCAyNjIuNCAxNiA0ODAtMTkwLjQgNDgwLTQ0OS42Qzk2Ni40IDI3MiA3NjQuOCA3MC40IDUxNi44IDcwLjR6IiAgLz48L3N2Zz4=")
+}

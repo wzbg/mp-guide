@@ -1,0 +1,38 @@
+<!--miniprogram/pages/component/icon/icon.wxml-->
+<view>
+  <text>系统图标：</text>
+  <icon type="success" size="21" />
+  <icon type="success_no_circle" size="22" />
+  <icon type="info" />
+  <icon type="warn" size="24" />
+  <icon type="waiting" size="25" />
+  <icon type="cancel" size="26" />
+  <icon type="download" size="27" />
+  <icon type="search" size="28" />
+  <icon type="clear" size="29" />
+  <icon type="clear" size="30" color="red" />
+</view>
+<view>
+  <text>自定义图标：</text>
+</view>
+<view>
+  <text>1. 使用图片：</text>
+  <image src="timer.png" mode="aspectFit" />
+</view>
+<view>
+  <text>2. 使用精灵图：</text>
+  <icon class="sprite-icon" />
+</view>
+<view>
+  <text>3. 使用CSS样式绘制：</text>
+  <icon class="icon-close" />
+</view>
+<view>
+  <text>4. 使用矢量字体：</text>
+  <icon class="gymfont icon-dumbbell" />
+  <icon class="gymfont icon-timer" />
+</view>
+<view>
+  <text>5. 使用SVG矢量文件：</text>
+  <icon class="svg-icon" />
+</view>

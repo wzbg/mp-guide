@@ -1,0 +1,10 @@
+<!--miniprogram/pages/component/component.wxml-->
+<view class="container">
+
+  <view class="uploader">
+    <navigator url="./icon/icon" open-type="navigate" class="uploader-text">
+      <text>图标 Icon</text>
+    </navigator>
+  </view>
+
+</view>
