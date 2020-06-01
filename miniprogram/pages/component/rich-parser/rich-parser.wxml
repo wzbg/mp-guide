@@ -1,0 +1,2 @@
+<!--miniprogram/pages/component/rich-parser/rich-parser.wxml-->
+<parser html="{{html}}" />
