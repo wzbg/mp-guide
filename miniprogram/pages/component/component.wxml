@@ -7,4 +7,10 @@
     </navigator>
   </view>
 
+  <view class="uploader">
+    <navigator url="./progress/progress" open-type="navigate" class="uploader-text">
+      <text>进度条 Progress</text>
+    </navigator>
+  </view>
+
 </view>
