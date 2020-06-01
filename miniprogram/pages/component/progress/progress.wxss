@@ -6,3 +6,8 @@
 .wx-progress-inner-bar {
   border-radius: 5px;
 }
+
+.wx-progress-info {
+  color: red;
+  margin-left: 5px;
+}
