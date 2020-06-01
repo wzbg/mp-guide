@@ -1,6 +1,9 @@
 <!--miniprogram/pages/component/progress/progress.wxml-->
 <view style="padding: 0 10px">
-  <text>进度条：</text>
-  <progress percent="50" />
-  <progress percent="50" show-info border-radius="10" font-size="32" stroke-width="12" activeColor="blue" backgroundColor="red" active active-mode="forwards" duration="90" bindactiveend="" />
-</view> 
+  <view>
+    <text>系统进度条：</text>
+    <progress percent="{{percentValue}}" />
+    <progress percent="{{percentValue}}" show-info border-radius="10" font-size="32" stroke-width="12" activeColor="blue" backgroundColor="red" active active-mode="forwards" duration="90" bindactiveend="" />
+    <button bindtap="onTapReloadBtn">重置</button>
+  </view>
+</view>

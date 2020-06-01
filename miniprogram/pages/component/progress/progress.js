@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    percentValue: 50
   },
 
   /**
@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  onTapReloadBtn: function() {
+    this.setData({ percentValue: 0 })
+    this.setData({ percentValue: 50 })
   }
 })

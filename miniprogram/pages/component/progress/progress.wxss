@@ -1,1 +1,8 @@
 /* miniprogram/pages/component/progress/progress.wxss */
+.wx-progress-inner-bar {
+  width: 0;
+  height: 100%;
+}
+.wx-progress-inner-bar {
+  border-radius: 5px;
+}
