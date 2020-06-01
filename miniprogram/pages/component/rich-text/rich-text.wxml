@@ -1,4 +1,4 @@
 <!--miniprogram/pages/component/rich-text/rich-text.wxml-->
 <view style="padding: 0 10px">
-  <rich-text nodes="{{nodes}}" />
+  <rich-text nodes="{{nodes}}" bindtap="onTapPreviewBtn" />
 </view>

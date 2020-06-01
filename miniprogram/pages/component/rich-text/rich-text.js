@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    urls: [],
     nodes: [{
       name: "div",
       children: [{
@@ -49,7 +50,23 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    function findUrl(nodes) {
+      let urls = []
+      nodes.forEach(item => {
+        if (item.name = "img" && item.attrs) {
+          for (const key in item.attrs) {
+            if (key == "src") {
+              urls.push(item.attrs[key])
+            }
+          }
+        }
+        if (item.children) {
+          urls = urls.concat(findUrl(item.children))
+        }
+      })
+      return urls
+    }
+    this.data.urls = findUrl(this.data.nodes)
   },
 
   /**
@@ -92,5 +109,15 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  onTapPreviewBtn: function(e) {
+    const urls = this.data.urls
+    if (urls.length > 0) {
+      wx.previewImage({
+        current: urls[parseInt(urls.length / 2)],
+        urls: urls
+      })
+    }
   }
 })

@@ -64,7 +64,7 @@ Page({
 
   },
 
-  onTapReloadBtn: function() {
+  onTapReloadBtn: function(e) {
     this.setData({ percentValue: 0 })
     this.setData({ percentValue: 50 })
   }
