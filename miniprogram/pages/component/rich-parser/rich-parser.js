@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    html: "<div>Hello World!</div>"
+    tagStyle: {
+      img: 'font-size:0;display:block;',
+    },
+    html: "<div><img src='https://mmbiz.qpic.cn/mmbiz_gif/vEKqYFacecgfAHVZwKA0ia4GyMLct2ibWNbrAicU0s94OZrgc4a1e8fPEEiaORRhZ5hnVQb1d68bmrpOH2uhpa6myw/0?wx_fmt=gif' /><img src='https://mmbiz.qpic.cn/mmbiz_gif/Tia9oKjKIibgzVYt2CJiaPvlw4OcweiaicHS6ZDicVeME9tlOQwQsRBlBozicw2Z3FLNIMjd3IF9rxYQuUrxq0telBRFA/640?wx_fmt=gif' /><img src='https://mmbiz.qpic.cn/mmbiz_gif/vEKqYFacecgfAHVZwKA0ia4GyMLct2ibWNNBItrGIjXkUWWSiaukR8933SgFky8fwYnfqFyDkePTAicl0HALuqiaY7Q/0?wx_fmt=gif' /></div>"
   },
 
   /**
