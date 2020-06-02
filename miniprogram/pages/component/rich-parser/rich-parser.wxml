@@ -1,2 +1,2 @@
 <!--miniprogram/pages/component/rich-parser/rich-parser.wxml-->
-<parser html="{{html}}" tag-style="{{tagStyle}}" />
+<parser html="{{html}}" tag-style="{{tagStyle}}" bindimgtap="onTapImage" />

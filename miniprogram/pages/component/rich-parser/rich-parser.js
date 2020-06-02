@@ -65,5 +65,9 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  onTapImage: function(e) {
+    console.log("iamge url: ", e.detail.src)
   }
 })
