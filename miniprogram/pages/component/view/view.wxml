@@ -9,4 +9,7 @@
       点击绿背景（阻止本节点的祖先节点出现点击态）
     </view>
   </view>
+  <button type="primary" hover-class="rect-btn__hover_btn">完成</button>
+  <button hover-class="circle-btn__hover_btn"><icon type="success" size="80" /></button>
+  <button type="default" plain hover-class="rect-btn__hover_btn"><icon type="success_no_circle" size="26" /></button>
 </view>
