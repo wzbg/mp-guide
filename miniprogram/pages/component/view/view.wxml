@@ -1,0 +1,12 @@
+<!--miniprogram/pages/component/view/view.wxml-->
+<view style="padding: 0 10px">
+  <view hover-class="bc_red">
+    点击红背景
+    <view hover-class="bc_blue">
+      点击蓝背景
+    </view>
+    <view hover-class="bc_green" hover-stop-propagation>
+      点击绿背景（阻止本节点的祖先节点出现点击态）
+    </view>
+  </view>
+</view>

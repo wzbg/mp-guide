@@ -25,4 +25,10 @@
     </navigator>
   </view>
 
+  <view class="uploader">
+    <navigator url="./view/view" open-type="navigate" class="uploader-text">
+      <text>视图容器 View</text>
+    </navigator>
+  </view>
+
 </view>
