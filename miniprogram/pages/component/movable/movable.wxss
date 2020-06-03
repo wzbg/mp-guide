@@ -1,0 +1,59 @@
+/* miniprogram/pages/component/movable/movable.wxss */
+#word {
+  position: sticky;
+  top: 10px;
+}
+
+movable-area {
+  height: 400rpx;
+  width: 400rpx;
+  background-color: #ccc;
+  overflow: hidden;
+}
+movable-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150rpx;
+  width: 150rpx;
+  background: #1AAD19;
+  color: #fff;
+}
+
+.list_item {
+  display: flex;
+  border-bottom: 1px solid #DEDEDE;
+}
+.max {
+  width: 600rpx;
+  height: 600rpx;
+  background-color: blue;
+}
+.left {
+  background-color: white;
+  height: 100rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  color: grey;
+  line-height: 100rpx;
+  padding-left: 30rpx;
+}
+.right {
+  height: 100;
+  display: flex;
+  direction: row;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 110rpx;
+}
+.read {
+  background-color: #ccc;
+  color: #fff;
+  width: 150rpx;
+}
+.delete {
+  background-color: red;
+  color: #fff;
+  width: 150rpx; 
+}

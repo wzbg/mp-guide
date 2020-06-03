@@ -1,0 +1,35 @@
+<!--miniprogram/pages/component/movable/movable.wxml-->
+<view style="display: flex; flex-direction: column-reverse; align-items: center">
+  <view id="word">粘性定位</view>
+  <movable-area>
+    <movable-view direction="all" style="width: 400rpx; height: 400rpx">等视图</movable-view>
+  </movable-area>
+  <movable-area>
+    <movable-view direction="all">小视图</movable-view>
+  </movable-area>
+  <movable-area>
+    <movable-view direction="all" style="width: 500rpx; height: 500rpx">大视图</movable-view>
+  </movable-area>
+  <view>
+    <movable-area>
+      <movable-view direction="all" inertia animation x="{{x}}" y="{{y}}">动画视图</movable-view>
+    </movable-area>
+    <view style="display: flex; width: 400rpx">
+      <button bindtap="move" data-y="-30">上</button>
+      <button bindtap="move" data-y="30">下</button>
+      <button bindtap="move" data-x="-30">左</button>
+      <button bindtap="move" data-x="30">右</button>
+    </view>
+  </view>
+  <view class="list_item">
+    <movable-area style="width: 750rpx; height: 100rpx">
+      <movable-view direction="horizontal" class="max" style="width: 1050rpx; height: 100rpx">
+        <view class="left">这里是插入到组内容1</view>
+        <view class="right">
+          <view class="read">已读</view>
+          <view class="delete">删除</view>
+        </view>
+      </movable-view>
+    </movable-area>
+  </view>
+</view>

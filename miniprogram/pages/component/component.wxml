@@ -37,4 +37,10 @@
     </navigator>
   </view>
 
+  <view class="uploader">
+    <navigator url="./movable/movable" open-type="navigate" class="uploader-text">
+      <text>可移动视图 Movable</text>
+    </navigator>
+  </view>
+
 </view>
