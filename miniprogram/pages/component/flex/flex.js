@@ -67,9 +67,9 @@ Page({
   createImage: function() {
     this.setData({
       imgDraw: {
-        background: "#576b95",
-        width: "850px",
-        height: "440px",
+        background: '#576b95',
+        width: '850px',
+        height: '440px',
         borderRadius: '20rpx',
         views: []
       }
@@ -77,23 +77,23 @@ Page({
   },
 
   onImgOK: function(e) {
-    console.info("img ok:", e)
+    console.info('img ok:', e)
     wx.saveImageToPhotosAlbum({
       filePath: e.detail.path,
       success: res => {
         wx.showToast({
-          title: "保存成功",
+          title: '保存成功',
         })
       },
       fail: res => {
         wx.showToast({
-          title: "保存失败",
+          title: '保存失败',
         })
       }
     })
   },
 
   onImgErr: function(e) {
-    console.info("img err:", e)
+    console.info('img err:', e)
   }
 })

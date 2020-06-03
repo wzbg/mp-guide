@@ -68,6 +68,6 @@ Page({
   },
 
   onTapImage: function(e) {
-    console.log("iamge url: ", e.detail.src)
+    console.log('iamge url: ', e.detail.src)
   }
 })

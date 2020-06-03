@@ -7,33 +7,33 @@ Page({
   data: {
     urls: [],
     nodes: [{
-      name: "div",
+      name: 'div',
       children: [{
-        type: "text",
-        text: "杠铃卧推"
+        type: 'text',
+        text: '杠铃卧推'
       }, {
-        name: "img",
+        name: 'img',
         attrs: {
-          src: "https://mmbiz.qpic.cn/mmbiz_gif/vEKqYFacecgfAHVZwKA0ia4GyMLct2ibWNbrAicU0s94OZrgc4a1e8fPEEiaORRhZ5hnVQb1d68bmrpOH2uhpa6myw/0?wx_fmt=gif",
-          style: "width: 100%"
+          src: 'https://mmbiz.qpic.cn/mmbiz_gif/vEKqYFacecgfAHVZwKA0ia4GyMLct2ibWNbrAicU0s94OZrgc4a1e8fPEEiaORRhZ5hnVQb1d68bmrpOH2uhpa6myw/0?wx_fmt=gif',
+          style: 'width: 100%'
         }
       }, {
-        type: "text",
-        text: "杠铃深蹲"
+        type: 'text',
+        text: '杠铃深蹲'
       }, {
-        name: "img",
+        name: 'img',
         attrs: {
-          src: "https://mmbiz.qpic.cn/mmbiz_gif/Tia9oKjKIibgzVYt2CJiaPvlw4OcweiaicHS6ZDicVeME9tlOQwQsRBlBozicw2Z3FLNIMjd3IF9rxYQuUrxq0telBRFA/640?wx_fmt=gif",
-          style: "width: 100%"
+          src: 'https://mmbiz.qpic.cn/mmbiz_gif/Tia9oKjKIibgzVYt2CJiaPvlw4OcweiaicHS6ZDicVeME9tlOQwQsRBlBozicw2Z3FLNIMjd3IF9rxYQuUrxq0telBRFA/640?wx_fmt=gif',
+          style: 'width: 100%'
         }
       }, {
-        type: "text",
-        text: "杠铃硬拉"
+        type: 'text',
+        text: '杠铃硬拉'
       }, {
-        name: "img",
+        name: 'img',
         attrs: {
-          src: "https://mmbiz.qpic.cn/mmbiz_gif/vEKqYFacecgfAHVZwKA0ia4GyMLct2ibWNNBItrGIjXkUWWSiaukR8933SgFky8fwYnfqFyDkePTAicl0HALuqiaY7Q/0?wx_fmt=gif",
-          style: "width: 100%"
+          src: 'https://mmbiz.qpic.cn/mmbiz_gif/vEKqYFacecgfAHVZwKA0ia4GyMLct2ibWNNBItrGIjXkUWWSiaukR8933SgFky8fwYnfqFyDkePTAicl0HALuqiaY7Q/0?wx_fmt=gif',
+          style: 'width: 100%'
         }
       }]
     }]
@@ -53,9 +53,9 @@ Page({
     function findUrl(nodes) {
       let urls = []
       nodes.forEach(item => {
-        if (item.name = "img" && item.attrs) {
+        if (item.name = 'img' && item.attrs) {
           for (const key in item.attrs) {
-            if (key == "src") {
+            if (key == 'src') {
               urls.push(item.attrs[key])
             }
           }
