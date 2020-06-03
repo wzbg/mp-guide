@@ -26,7 +26,7 @@
 	},
 	"appid": "wx2f9e113bd042f7b9",
 	"projectname": "mp-guide",
-	"libVersion": "2.8.1",
+	"libVersion": "2.11.1",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {

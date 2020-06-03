@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    imgDraw: {}
   },
 
   /**
@@ -62,5 +62,38 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  createImage: function() {
+    this.setData({
+      imgDraw: {
+        background: "#576b95",
+        width: "850px",
+        height: "440px",
+        borderRadius: '20rpx',
+        views: []
+      }
+    })
+  },
+
+  onImgOK: function(e) {
+    console.info("img ok:", e)
+    wx.saveImageToPhotosAlbum({
+      filePath: e.detail.path,
+      success: res => {
+        wx.showToast({
+          title: "保存成功",
+        })
+      },
+      fail: res => {
+        wx.showToast({
+          title: "保存失败",
+        })
+      }
+    })
+  },
+
+  onImgErr: function(e) {
+    console.info("img err:", e)
   }
 })
