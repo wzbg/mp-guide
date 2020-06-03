@@ -1,0 +1,159 @@
+<!--miniprogram/pages/component/flex/flex.wxml-->
+<view style="padding: 10px">
+   <text>1.1 justify-content: flex-start</text>
+   <view style="display: flex; flex-direction: row; justify-content: flex-start">
+    <view class="bc_green">1</view>
+    <view class="bc_blue">2</view>
+    <view class="bc_red">3</view>
+   </view>
+   <text>1.2 justify-content: flex-end</text>
+   <view style="display: flex; flex-direction: row; justify-content: flex-end">
+    <view class="bc_green">1</view>
+    <view class="bc_blue">2</view>
+    <view class="bc_red">3</view>
+   </view>
+   <text>1.3 justify-content: center</text>
+   <view style="display: flex; flex-direction: row; justify-content: center">
+    <view class="bc_green">1</view>
+    <view class="bc_blue">2</view>
+    <view class="bc_red">3</view>
+   </view>
+   <text>1.4 justify-content: space-between</text>
+   <view style="display: flex; flex-direction: row; justify-content: space-between">
+    <view class="bc_green">1</view>
+    <view class="bc_blue">2</view>
+    <view class="bc_red">3</view>
+   </view>
+   <text>1.5 justify-content: space-around</text>
+   <view style="display: flex; flex-direction: row; justify-content: space-around">
+    <view class="bc_green">1</view>
+    <view class="bc_blue">2</view>
+    <view class="bc_red">3</view>
+   </view>
+   <text>2.1 align-items: stretch</text>
+   <view style="display: flex; flex-direction: row; justify-content: space-around; align-items: stretch">
+    <view class="bc_green">1</view>
+    <view class="bc_blue">2</view>
+    <view class="bc_red" style="height: auto">3</view>
+   </view>
+   <text>2.2 align-items: flex-start</text>
+   <view style="display: flex; flex-direction: row; justify-content: space-around; align-items: flex-start">
+    <view class="bc_green">1</view>
+    <view class="bc_blue">2</view>
+    <view class="bc_red" style="height: auto">3</view>
+   </view>
+   <text>2.3 align-items: flex-end</text>
+   <view style="display: flex; flex-direction: row; justify-content: space-around; align-items: flex-end">
+    <view class="bc_green">1</view>
+    <view class="bc_blue">2</view>
+    <view class="bc_red" style="height: auto">3</view>
+   </view>
+   <text>2.4 align-items: center</text>
+   <view style="display: flex; flex-direction: row; justify-content: space-around; align-items: center">
+    <view class="bc_green">1</view>
+    <view class="bc_blue">2</view>
+    <view class="bc_red" style="height: auto">3</view>
+   </view>
+   <text>2.5 align-items: baseline</text>
+   <view style="display: flex; flex-direction: row; justify-content: space-around; align-items: baseline">
+    <view class="bc_green">1</view>
+    <view class="bc_blue" style="padding-top: 30px">2</view>
+    <view class="bc_red" style="height: auto; line-height: 150px">3</view>
+   </view>
+   <text>3.1 flex-wrap: no-wrap</text>
+   <view style="display: flex; flex-direction: row; justify-content: flex-start; align-items: baseline; flex-wrap: no-wrap">
+    <view class="bc_green" style="height: auto">1</view>
+    <view class="bc_blue" style="height: auto">2</view>
+    <view class="bc_red" style="height: auto">3</view>
+    <view class="bc_purple" style="height: auto">4</view>
+    <view class="bc_yellow" style="height: auto">5</view>
+   </view>
+   <text>3.2 flex-wrap: wrap</text>
+   <view style="display: flex; flex-direction: row; justify-content: flex-start; align-items: baseline; flex-wrap: wrap">
+    <view class="bc_green" style="height: auto">1</view>
+    <view class="bc_blue" style="height: auto">2</view>
+    <view class="bc_red" style="height: auto">3</view>
+    <view class="bc_purple" style="height: auto">4</view>
+    <view class="bc_yellow" style="height: auto">5</view>
+   </view>
+   <text>3.3 flex-wrap: wrap-reverse</text>
+   <view style="display: flex; flex-direction: row; justify-content: flex-start; align-items: baseline; flex-wrap: wrap-reverse">
+    <view class="bc_green" style="height: auto">1</view>
+    <view class="bc_blue" style="height: auto">2</view>
+    <view class="bc_red" style="height: auto">3</view>
+    <view class="bc_purple" style="height: auto">4</view>
+    <view class="bc_yellow" style="height: auto">5</view>
+   </view>
+   <text>4.1 align-content: stretch</text>
+   <view style="display: flex; flex-direction: row; justify-content: flex-start; align-items: baseline; flex-wrap: wrap; align-content: stretch; height: 100px">
+    <view class="bc_green" style="height: auto">1</view>
+    <view class="bc_blue" style="height: auto">2</view>
+    <view class="bc_red" style="height: auto">3</view>
+    <view class="bc_purple" style="height: auto">4</view>
+    <view class="bc_yellow" style="height: auto">5</view>
+   </view>
+   <text>4.2 ralign-content: flex-start</text>
+   <view style="display: flex; flex-direction: row; justify-content: flex-start; align-items: baseline; flex-wrap: wrap; align-content: flex-start; height: 100px">
+    <view class="bc_green" style="height: auto">1</view>
+    <view class="bc_blue" style="height: auto">2</view>
+    <view class="bc_red" style="height: auto">3</view>
+    <view class="bc_purple" style="height: auto">4</view>
+    <view class="bc_yellow" style="height: auto">5</view>
+   </view>
+   <text>4.3 align-content: flex-end</text>
+   <view style="display: flex; flex-direction: row; justify-content: flex-start; align-items: baseline; flex-wrap: wrap; align-content: flex-end; height: 100px">
+    <view class="bc_green" style="height: auto">1</view>
+    <view class="bc_blue" style="height: auto">2</view>
+    <view class="bc_red" style="height: auto">3</view>
+    <view class="bc_purple" style="height: auto">4</view>
+    <view class="bc_yellow" style="height: auto">5</view>
+   </view>
+   <text>4.4 align-content: center</text>
+   <view style="display: flex; flex-direction: row; justify-content: flex-start; align-items: baseline; flex-wrap: wrap; align-content: center; height: 100px">
+    <view class="bc_green" style="height: auto">1</view>
+    <view class="bc_blue" style="height: auto">2</view>
+    <view class="bc_red" style="height: auto">3</view>
+    <view class="bc_purple" style="height: auto">4</view>
+    <view class="bc_yellow" style="height: auto">5</view>
+   </view>
+   <text>4.5 align-content: space-between</text>
+   <view style="display: flex; flex-direction: row; justify-content: flex-start; align-items: baseline; flex-wrap: wrap; align-content: space-between; height: 100px">
+    <view class="bc_green" style="height: auto">1</view>
+    <view class="bc_blue" style="height: auto">2</view>
+    <view class="bc_red" style="height: auto">3</view>
+    <view class="bc_purple" style="height: auto">4</view>
+    <view class="bc_yellow" style="height: auto">5</view>
+   </view>
+   <text>4.6 align-content: space-around</text>
+   <view style="display: flex; flex-direction: row; justify-content: flex-start; align-items: baseline; flex-wrap: wrap; align-content: space-around; height: 100px">
+    <view class="bc_green" style="height: auto">1</view>
+    <view class="bc_blue" style="height: auto">2</view>
+    <view class="bc_red" style="height: auto">3</view>
+    <view class="bc_purple" style="height: auto">4</view>
+    <view class="bc_yellow" style="height: auto">5</view>
+   </view>
+   <text>5.1 flex-direction: row</text>
+   <view style="display: flex; flex-direction: row; align-items: center">
+    <view class="bc_green">1</view>
+    <view class="bc_blue">2</view>
+    <view class="bc_red">3</view>
+   </view>
+   <text>5.2 flex-direction: row-reverse</text>
+   <view style="display: flex; flex-direction: row-reverse; align-items: center">
+    <view class="bc_green">1</view>
+    <view class="bc_blue">2</view>
+    <view class="bc_red">3</view>
+   </view>
+   <text>5.3 flex-direction: column</text>
+   <view style="display: flex; flex-direction: column; align-items: center">
+    <view class="bc_green">1</view>
+    <view class="bc_blue">2</view>
+    <view class="bc_red">3</view>
+   </view>
+   <text>5.4 flex-direction: column-reverse</text>
+   <view style="display: flex; flex-direction: column-reverse; align-items: center">
+    <view class="bc_green">1</view>
+    <view class="bc_blue">2</view>
+    <view class="bc_red">3</view>
+   </view>
+</view>

@@ -31,4 +31,10 @@
     </navigator>
   </view>
 
+  <view class="uploader">
+    <navigator url="./flex/flex" open-type="navigate" class="uploader-text">
+      <text>布局 Flex</text>
+    </navigator>
+  </view>
+
 </view>

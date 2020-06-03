@@ -1,0 +1,30 @@
+/* miniprogram/pages/component/flex/flex.wxss */
+.bc_red {
+  background-color: red;
+  color: white;
+  height: 100px;
+  width: 100px;
+}
+.bc_blue {
+  background-color: blue;
+  color: white;
+  height: 120px;
+  width: 100px;
+}
+.bc_green {
+  background-color: green;
+  color: white;
+  height: 140px;
+  width: 100px;
+}
+.bc_purple {
+  background-color: purple;
+  color: white;
+  height: 160px;
+  width: 100px;
+}
+.bc_yellow {
+  background-color: yellow;
+  height: 180px;
+  width: 100px;
+}
