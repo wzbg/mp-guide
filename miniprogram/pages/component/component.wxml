@@ -39,7 +39,7 @@
 
   <view class="uploader">
     <navigator url="./movable/movable" open-type="navigate" class="uploader-text">
-      <text>可移动视图 Movable</text>
+      <text>可移动视图 Movable View</text>
     </navigator>
   </view>
 
@@ -52,6 +52,12 @@
   <view class="uploader">
     <navigator url="./render-wxml/render-wxml" open-type="navigate" class="uploader-text">
       <text>渲染图片 Render Wxml</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="./scroll-view/scroll-view" open-type="navigate" class="uploader-text">
+      <text>可滚动视图 Scroll View</text>
     </navigator>
   </view>
 
