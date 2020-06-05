@@ -1,0 +1,20 @@
+<!--miniprogram/pages/component/slide-view/slide-view.wxml-->
+<view class="page-section-title">slide-view</view>
+<slide-view class="slide" width="750" height="100" slideWidth="300">
+	<view class="left" slot="left">这里是插入到组内容2</view>
+	<view class="right" slot="right">
+		<view class="read">已读</view>
+		<view class="delete">删除</view>
+	</view>
+</slide-view>
+<view class="page-section-title">mp-slideview</view>
+<mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap">
+  <view class="weui-cells">
+    左滑可以删除（标题文字）
+  </view>
+</mp-slideview>
+<mp-slideview buttons="{{slideButtons}}" icon bindbuttontap="slideButtonTap">
+  <view class="weui-cells">
+    左滑可以删除（图标Button）
+  </view>
+</mp-slideview>

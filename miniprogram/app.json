@@ -20,7 +20,8 @@
     "pages/component/rich-parser/rich-parser",
     "pages/component/view/view",
     "pages/component/flex/flex",
-    "pages/component/movable/movable"
+    "pages/component/movable/movable",
+    "pages/component/slide-view/slide-view"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -30,5 +31,8 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "useExtendedLib": {
+    "weui": true
+  }
 }
