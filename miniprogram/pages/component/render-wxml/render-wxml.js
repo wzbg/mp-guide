@@ -1,12 +1,28 @@
 // miniprogram/pages/component/render-wxml/render-wxml.js
-const wxml = '<image class="img" src="https://mmbiz.qpic.cn/mmbiz_jpg/Tia9oKjKIibgwGcGEiaxnjoPzEn5nZJvOXC54TrcmpOZRngu4WZdXXzTmoOJRX39LjHG4nRdtswoNSHajdaeZI0yA/640?wx_fmt=jpeg" />'
-const style = {}
+const wxml = `
+<view class="container" >
+  <image class="img" src="https://mmbiz.qpic.cn/mmbiz_jpg/Tia9oKjKIibgwGcGEiaxnjoPzEn5nZJvOXC54TrcmpOZRngu4WZdXXzTmoOJRX39LjHG4nRdtswoNSHajdaeZI0yA/640?wx_fmt=jpeg"></image>
+</view>
+`
+const style = {
+  container: {
+    backgroundColor: '#576b95',
+    width: 375,
+    height: 200,
+  },
+  img: {
+    width: '100%',
+    borderRadius: '50%'
+  }
+}
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    src: ''
   },
 
   renderToCanvas() {
@@ -14,6 +30,34 @@ Page({
     p1.then(res => {
       console.log('container', res.layoutBox)
       this.container = res
+    })
+  },
+
+  extraImage() {
+    const p2 = this.widget.canvasToTempFilePath()
+    p2.then(res => {
+      console.log('tempFilePath', res.tempFilePath)
+      this.setData({
+        src: res.tempFilePath,
+        width: this.container.layoutBox.width,
+        height: this.container.layoutBox.height
+      })
+    })
+  },
+
+  onTapSaveBtn() {
+    wx.saveImageToPhotosAlbum({
+      filePath: this.data.src,
+      success: res => {
+        wx.showToast({
+          title: '保存成功',
+        })
+      },
+      fail: res => {
+        wx.showToast({
+          title: '保存失败',
+        })
+      }
     })
   },
 
