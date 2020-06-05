@@ -1,18 +1,10 @@
 // miniprogram/pages/component/render-wxml/render-wxml.js
-const wxml = `
-<view class="container" >
-  <image class="img" src="https://mmbiz.qpic.cn/mmbiz_jpg/Tia9oKjKIibgwGcGEiaxnjoPzEn5nZJvOXC54TrcmpOZRngu4WZdXXzTmoOJRX39LjHG4nRdtswoNSHajdaeZI0yA/640?wx_fmt=jpeg"></image>
-</view>
-`
+const wxml = '<image class="img" src="https://mmbiz.qpic.cn/mmbiz_jpg/Tia9oKjKIibgwGcGEiaxnjoPzEn5nZJvOXC54TrcmpOZRngu4WZdXXzTmoOJRX39LjHG4nRdtswoNSHajdaeZI0yA/640?wx_fmt=jpeg"></image>'
 const style = {
-  container: {
-    backgroundColor: '#576b95',
+  img: {
     width: 375,
     height: 200,
-  },
-  img: {
-    width: '100%',
-    borderRadius: '50%'
+    borderRadius: 10
   }
 }
 

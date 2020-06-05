@@ -67,7 +67,7 @@ Page({
   createImage: function() {
     this.setData({
       imgDraw: {
-        background: '#576b95',
+        background: 'https://mmbiz.qpic.cn/mmbiz_jpg/Tia9oKjKIibgwGcGEiaxnjoPzEn5nZJvOXC54TrcmpOZRngu4WZdXXzTmoOJRX39LjHG4nRdtswoNSHajdaeZI0yA/640?wx_fmt=jpeg',
         width: '850px',
         height: '440px',
         borderRadius: '20rpx',
