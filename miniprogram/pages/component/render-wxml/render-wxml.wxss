@@ -1,0 +1,5 @@
+/* miniprogram/pages/component/render-wxml/render-wxml.wxss */
+.img{
+  width: 100%;
+  border-radius: 50%;
+}

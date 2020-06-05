@@ -1,0 +1,6 @@
+<!--miniprogram/pages/component/render-wxml/render-wxml.wxml-->
+<image class="img" src="https://mmbiz.qpic.cn/mmbiz_jpg/Tia9oKjKIibgwGcGEiaxnjoPzEn5nZJvOXC54TrcmpOZRngu4WZdXXzTmoOJRX39LjHG4nRdtswoNSHajdaeZI0yA/640?wx_fmt=jpeg" />
+<wxml-to-canvas class="widget" />
+<button type="primary" bindtap="renderToCanvas">渲染到canvas</button>
+<button bindtap="extraImage">导出图片</button>
+<button type="warn" bindtap="onTapSaveBtn">保存图片</button>

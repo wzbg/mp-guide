@@ -21,7 +21,7 @@
 
   <view class="uploader">
     <navigator url="./rich-parser/rich-parser" open-type="navigate" class="uploader-text">
-      <text>小程序富文本插件 Parser</text>
+      <text>富文本插件 Parser</text>
     </navigator>
   </view>
 
@@ -45,7 +45,13 @@
 
   <view class="uploader">
     <navigator url="./slide-view/slide-view" open-type="navigate" class="uploader-text">
-      <text>小程序视图 Slide View</text>
+      <text>侧滑视图 Slide View</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="./render-wxml/render-wxml" open-type="navigate" class="uploader-text">
+      <text>渲染图片 Render Wxml</text>
     </navigator>
   </view>
 

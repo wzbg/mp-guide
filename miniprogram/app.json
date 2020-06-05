@@ -21,7 +21,8 @@
     "pages/component/view/view",
     "pages/component/flex/flex",
     "pages/component/movable/movable",
-    "pages/component/slide-view/slide-view"
+    "pages/component/slide-view/slide-view",
+    "pages/component/render-wxml/render-wxml"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
