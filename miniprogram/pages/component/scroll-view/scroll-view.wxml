@@ -31,4 +31,13 @@
       </view>
     </scroll-view>
   </view>
+  <view>
+    <text>4. 下拉刷新：</text>
+    <scroll-view scroll-y refresher-enabled style="width: 100%; height: 400rpx">
+      <view id="demo1" class="item bc_red">1</view>
+      <view id="demo2" class="item bc_blue">2</view>
+      <view id="demo3" class="item bc_green">3</view>
+      <view id="demo4" class="item bc_yellow">4</view>
+    </scroll-view>
+  </view>
 </view>
