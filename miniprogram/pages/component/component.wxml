@@ -61,4 +61,10 @@
     </navigator>
   </view>
 
+  <view class="uploader">
+    <navigator url="./pull-to-refresh/pull-to-refresh" open-type="navigate" class="uploader-text">
+      <text>自定义下拉刷新 Pull To Refresh</text>
+    </navigator>
+  </view>
+
 </view>

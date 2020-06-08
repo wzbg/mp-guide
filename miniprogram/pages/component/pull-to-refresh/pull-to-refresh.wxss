@@ -1,0 +1,21 @@
+/* miniprogram/pages/component/pull-to-refresh/pull-to-refresh.wxss */
+.bc_red {
+  background-color: red;
+  color: white;
+}
+.bc_blue {
+  background-color: blue;
+  color: white;
+}
+.bc_green {
+  background-color: green;
+  color: white;
+}
+.bc_yellow {
+  background-color: yellow;
+}
+.item {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}

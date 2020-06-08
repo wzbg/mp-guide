@@ -1,0 +1,70 @@
+<!--miniprogram/pages/component/pull-to-refresh/pull-to-refresh.wxml-->
+<wxs module="refresh">
+	var pullingMessage = "下拉刷新"
+
+	module.exports = {
+		onRefresh: function(e, instance) {
+			// 此时手拉开了，进入了加载中的状态
+			pullingMessage = "更新中"
+			console.log(pullingMessage)
+			instance.callMethod("setData", {
+				pullingMessage: pullingMessage,
+				refresherTriggered: true
+			})
+			instance.callMethod("willCompleteRefresh", {})
+		},
+		onAbort: function(e, instance) {
+			// 异常状态，例如被事件突然打断，事件包括电话等，被迫松手了
+			pullingMessage = "下拉刷新"
+			console.log(pullingMessage)
+		},
+		onRestore: function(e, instance) {
+			// 回去了，松手了，恢复原位了，不刷了
+			pullingMessage = "下拉刷新"
+			console.log(pullingMessage)
+		},
+		onPulling: function(e, instance) {
+			// 80的高度，因为refresher-threshold设置的是80，手指按住往下拉的状态
+			var p = Math.min(e.detail.dy / 80, 1)
+			// console.log(p)
+			// 这里在视图层，不怕频繁操作DOM
+			var icon = instance.selectComponent('#refresherIcon')
+			icon.setStyle({
+				opacity: p,
+				transform: "rotate(" + (90 + p * 180) + "deg)"
+			})
+			var view = instance.selectComponent('.refresh-container')
+			view.setStyle({
+				opacity: p,
+				transform: "scale(" + p + ")"
+			})
+			if (e.detail.dy >= 80) {
+				if (pullingMessage == "下拉刷新") {
+					pullingMessage = "释放更新"
+					instance.callMethod("setData", {
+						pullingMessage
+					})
+				}
+			}
+		}
+	}
+</wxs>
+
+<scroll-view style="width: 100%; height: 1000rpx; overflow-anchor: auto" scroll-y
+  scroll-top="{{scrollTopValue}}" scroll-into-view="{{scrollIntoViewId}}" scroll-with-animation
+  enable-back-to-top enable-flex scroll-anchoring refresher-enabled refresher-threshold="{{80}}"
+  refresher-default-style="none" refresher-background="#FFF" refresher-triggered="{{refresherTriggered}}"
+  bindscrolltoupper="onScrolltoupper" bindscrolltolower="onScrolltolower" bindscroll="onScroll"
+  bindrefresherpulling="{{refresh.onPulling}}" bindrefresherrefresh="{{refresh.onRefresh}}"
+  bindrefresherrestore="{{refresh.onRestore}}" bindrefresherabort="{{refresh.onAbort}}">
+  <view slot="refresher" class="refresh-container" style="display: block; width: 100%; height: 80px; background: #F8f8f8; display: flex; align-items: center">
+    <view class="view1" style="position: absolute; text-align: center; width: 100%; display: flex; align-items: center; justify-content: center; color: #888">
+      <mp-icon id="refresherIcon" icon="arrow" color="#888" size="{{20}}" style="margin-right: 5px; transform: rotate(90deg)" />
+      <text style="min-width: 80px; text-align: left">{{pullingMessage}}</text>
+    </view>
+  </view>
+  <view id="demo1" class="item bc_red">1</view>
+  <view id="demo2" class="item bc_blue">2</view>
+  <view id="demo3" class="item bc_green">3</view>
+  <view id="demo4" class="item bc_yellow">4</view>
+</scroll-view>
