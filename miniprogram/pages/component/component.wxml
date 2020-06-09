@@ -67,4 +67,10 @@
     </navigator>
   </view>
 
+  <view class="uploader">
+    <navigator url="./recycle-view/recycle-view" open-type="navigate" class="uploader-text">
+      <text>长列表组件 Recycle View</text>
+    </navigator>
+  </view>
+
 </view>

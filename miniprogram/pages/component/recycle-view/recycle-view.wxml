@@ -1,0 +1,10 @@
+<!--miniprogram/pages/component/recycle-view/recycle-view.wxml-->
+<recycle-view batch="{{batchSetRecycleData}}" id="recycleId">
+  <view slot="before">长列表前面的内容</view>
+  <recycle-item wx:for="{{recycleList}}" wx:key="id" class="item">
+    <view>
+      {{item.id}}: {{item.name}}
+    </view>
+  </recycle-item>
+  <view slot="after" style="padding-top: 20px">长列表后面的内容</view>
+</recycle-view>
