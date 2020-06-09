@@ -73,4 +73,16 @@
     </navigator>
   </view>
 
+  <view class="uploader">
+    <navigator url="./tabs/tabs" open-type="navigate" class="uploader-text">
+      <text>选项卡组件 Tabs</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="./vtabs/vtabs" open-type="navigate" class="uploader-text">
+      <text>纵向选项卡组件 VTabs</text>
+    </navigator>
+  </view>
+
 </view>
