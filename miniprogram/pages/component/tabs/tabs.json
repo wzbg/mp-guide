@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "mp-tabs": "miniprogram-tabs/tabs"
+    "mp-tabs": "@miniprogram-component-plus/tabs/index"
   }
 }
