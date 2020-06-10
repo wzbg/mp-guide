@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "mp-vtabs": "@miniprogram-component-plus/vtabs/index",
+    "mp-vtabs-content": "@miniprogram-component-plus/vtabs-content/index"
+  }
 }
