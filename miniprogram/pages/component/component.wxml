@@ -85,4 +85,10 @@
     </navigator>
   </view>
 
+  <view class="uploader">
+    <navigator url="./picker/picker" open-type="navigate" class="uploader-text">
+      <text>从底部弹起的滚动选择器 Picker</text>
+    </navigator>
+  </view>
+
 </view>

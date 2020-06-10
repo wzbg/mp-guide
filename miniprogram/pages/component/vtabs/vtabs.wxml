@@ -2,7 +2,7 @@
 <view class="page">
   <mp-vtabs vtabs="{{tabs}}" active-tab="{{activeTab}}" active-class="tab-bar-title__selected" bindtabclick="onTabClick" bindchange="onChange">
     <block wx:for="{{tabs}}" wx:key="title">
-      <mp-vtabs-content tabIndex="{{index}}">
+      <mp-vtabs-content tab-index="{{index}}">
         <image src="{{item.img}}" mode="widthFix" />
         <view class="item-title">
           {{item.title2}}
