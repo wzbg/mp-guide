@@ -97,4 +97,10 @@
     </navigator>
   </view>
 
+  <view class="uploader">
+    <navigator url="./slider/slider" open-type="navigate" class="uploader-text">
+      <text>滑动选择器 Slider</text>
+    </navigator>
+  </view>
+
 </view>

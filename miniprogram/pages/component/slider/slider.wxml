@@ -1,0 +1,5 @@
+<!--miniprogram/pages/component/slider/slider.wxml-->
+<view style="padding: 0 10px; height: 1000rpx">
+  <slider value="50" show-value />
+  <vertical-slider value="50" show-value />
+</view>

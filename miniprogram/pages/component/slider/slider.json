@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "vertical-slider": "/components/vertical-slider/index"
+  }
+}
