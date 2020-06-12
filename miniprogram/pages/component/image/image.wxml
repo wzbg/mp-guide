@@ -1,0 +1,4 @@
+<!--miniprogram/pages/component/image/image.wxml-->
+<view style="display: flex; justify-content: center">
+  <image src="https://mmbiz.qpic.cn/mmbiz_gif/Tia9oKjKIibgzVYt2CJiaPvlw4OcweiaicHS6ZDicVeME9tlOQwQsRBlBozicw2Z3FLNIMjd3IF9rxYQuUrxq0telBRFA/640?wx_fmt=gif" mode="aspectFit" webp lazy-load show-menu-by-longpress />
+</view>
