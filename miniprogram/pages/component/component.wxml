@@ -115,4 +115,10 @@
     </navigator>
   </view>
 
+  <view class="uploader">
+    <navigator url="./image-cropper/image-cropper" open-type="navigate" class="uploader-text">
+      <text>图片裁剪 Image Cropper</text>
+    </navigator>
+  </view>
+
 </view>

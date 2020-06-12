@@ -1,0 +1,3 @@
+<!--miniprogram/pages/component/image-cropper/image-cropper.wxml-->
+<image-cropper id="image-cropper" imgSrc="https://mmbiz.qpic.cn/mmbiz_gif/Tia9oKjKIibgzVYt2CJiaPvlw4OcweiaicHS6ZDicVeME9tlOQwQsRBlBozicw2Z3FLNIMjd3IF9rxYQuUrxq0telBRFA/640?wx_fmt=gif"
+  limit_move width="400" height="226" max_width="1200" max_height="678" disable_ratio bindload="cropperload" bindimageload="loadimage" bindtapcut="clickcut" />
