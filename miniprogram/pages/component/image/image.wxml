@@ -1,4 +1,8 @@
 <!--miniprogram/pages/component/image/image.wxml-->
-<view style="display: flex; justify-content: center">
-  <image src="https://mmbiz.qpic.cn/mmbiz_gif/Tia9oKjKIibgzVYt2CJiaPvlw4OcweiaicHS6ZDicVeME9tlOQwQsRBlBozicw2Z3FLNIMjd3IF9rxYQuUrxq0telBRFA/640?wx_fmt=gif" mode="aspectFit" webp lazy-load show-menu-by-longpress />
+<view style="text-align: center">
+  <image src="https://mmbiz.qpic.cn/mmbiz_gif/Tia9oKjKIibgzVYt2CJiaPvlw4OcweiaicHS6ZDicVeME9tlOQwQsRBlBozicw2Z3FLNIMjd3IF9rxYQuUrxq0telBRFA/640?wx_fmt=gif"
+    mode="aspectFit" webp lazy-load show-menu-by-longpress />
+  <mina-lazy-image src="https://mmbiz.qpic.cn/mmbiz_gif/Tia9oKjKIibgzVYt2CJiaPvlw4OcweiaicHS6ZDicVeME9tlOQwQsRBlBozicw2Z3FLNIMjd3IF9rxYQuUrxq0telBRFA/640?wx_fmt=gif"
+    placeholder="https://mmbiz.qpic.cn/mmbiz_jpg/vEKqYFacechLENxXVX6s3KlLWFf0s75C1mw0cO9FzibABTAGUKekyuu4YSzQ5ibwJCOicstibCia2fRaDdvCzyJRTaw/0?wx_fmt=jpeg"
+    mode="aspectFit" webp show-menu-by-longpress />
 </view>
